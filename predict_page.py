@@ -15,7 +15,7 @@ le_country = data["le_country"]
 le_education = data["le_education"]
 
 def show_predict_page():
-    st.title("Software Developer Salary Prediction")
+    st.title("💵 Developer Salary Predictor")
     # st.caption("Based on Stack Overflow Developer Survey 2023 -> https://insights.stackoverflow.com/survey")
     st.caption("Based on 90,000+ responses to Stack Overflow's Developer Survey 2023 (https://insights.stackoverflow.com/survey).")
 
