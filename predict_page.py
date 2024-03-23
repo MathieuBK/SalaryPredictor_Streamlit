@@ -21,24 +21,24 @@ def show_predict_page():
 
     st.title("")
 
-    st.write("""### Enter information to predict the salary""")
+    # st.write("""### Enter information to predict the salary""")
     st.title("")
 
     countries = (
-        "United States",
-        "India",
-        "United Kingdom",
-        "Germany",
-        "Canada",
-        "Brazil",
-        "France",
-        "Spain",
-        "Australia",
-        "Netherlands",
-        "Poland",
-        "Italy",
-        "Russian Federation",
-        "Sweden",
+        "🇺🇸 United States",
+        "🇮🇳 India",
+        "🇬🇧 United Kingdom",
+        "🇩🇪 Germany",
+        "🇨🇦 Canada",
+        "🇧🇷 Brazil",
+        "🇫🇷 France",
+        "🇪🇸 Spain",
+        "🇦🇺 Australia",
+        "🇳🇱 Netherlands",
+        "🇵🇱 Poland",
+        "🇮🇹 Italy",
+        "🇷🇺 Russia",
+        "🇸🇪 Sweden",
     )
 
     education = (
