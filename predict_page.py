@@ -52,8 +52,10 @@ def show_predict_page():
     education = st.selectbox("Education Level", education)
 
     expericence = st.slider("Years of Experience", 0, 50, 3)
+    st.write("")
+    st.write("")
 
-    ok = st.button("Calculate Salary")
+    ok = st.button("Calculate Salary", type="primary")
     if ok:
         X = np.array([[country, education, expericence ]])
         X[:, 0] = le_country.transform(X[:,0])
