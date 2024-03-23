@@ -56,7 +56,8 @@ def load_data():
 df = load_data()
 
 def show_explore_page():
-    st.title("Software Developer Salaries")
+    # st.title("Software Developer Salaries")
+    st.title("💵 Developer Salary Data")
     # st.caption("Based on Stack Overflow Developer Survey 2023 -> https://insights.stackoverflow.com/survey")
     st.caption("Based on 90,000+ responses to Stack Overflow's Developer Survey 2023 (https://insights.stackoverflow.com/survey).")
     st.title("")
