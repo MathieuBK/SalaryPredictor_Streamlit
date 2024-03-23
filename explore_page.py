@@ -102,7 +102,7 @@ def show_explore_page():
     st.title("")
 
     data = df.groupby(["Country"])["Salary"].mean().sort_values(ascending=True)
-    st.bar_chart(data)
+    st.bar_chart(1.5*data)
 
     st.write(
         """
@@ -112,6 +112,6 @@ def show_explore_page():
     st.title("")
 
     data = df.groupby(["YearsCodePro"])["Salary"].mean().sort_values(ascending=True)
-    st.line_chart(data)
+    st.line_chart(1.5*data)
 
 show_explore_page()
