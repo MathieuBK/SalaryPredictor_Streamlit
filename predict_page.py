@@ -25,20 +25,20 @@ def show_predict_page():
     st.title("")
 
     countries = (
-        "🇺🇸  United States"="United States",
-        "🇮🇳  India",
-        "🇬🇧  United Kingdom",
-        "🇩🇪  Germany",
-        "🇨🇦  Canada",
-        "🇧🇷  Brazil",
-        "🇫🇷  France",
-        "🇪🇸  Spain",
-        "🇦🇺  Australia",
-        "🇳🇱  Netherlands",
-        "🇵🇱  Poland",
-        "🇮🇹  Italy",
-        "🇷🇺  Russia",
-        "🇸🇪  Sweden",
+        "United States",
+        "India",
+        "United Kingdom",
+        "Germany",
+        "Canada",
+        "Brazil",
+        "France",
+        "Spain",
+        "Australia",
+        "Netherlands",
+        "Poland",
+        "Italy",
+        "Russian Federation",
+        "Sweden",
     )
 
     education = (
