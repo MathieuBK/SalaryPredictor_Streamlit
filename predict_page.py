@@ -25,7 +25,7 @@ def show_predict_page():
     st.title("")
 
     countries = (
-        "🇺🇸  United States":"United States",
+        "🇺🇸  United States"="United States",
         "🇮🇳  India",
         "🇬🇧  United Kingdom",
         "🇩🇪  Germany",
