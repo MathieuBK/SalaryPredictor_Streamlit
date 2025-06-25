@@ -92,17 +92,6 @@ DevPayMaster/
 └── README.md
 ```
 
----
-
-## About the Author
-
-Built by **Mathieu Bekkaye** — Senior Fullstack Engineer & Data Scientist  
-Contact: [bekkaye.m+portfolio@gmail.com](mailto:bekkaye.m+portfolio@gmail.com)  
-LinkedIn: [linkedin.com/in/mathieubekkaye](https://linkedin.com/in/mathieubekkaye)  
-Book a call: [calendly.com/mathieubk/rdv](https://calendly.com/mathieubk/rdv)
-
----
-
 ## Why This Project Matters
 
 - Demonstrates applied machine learning in a business-relevant context
