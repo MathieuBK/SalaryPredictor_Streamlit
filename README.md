@@ -1,122 +1,112 @@
-# 💵 DevPayMaster – Developer Salary Predictor
+# DevPayMaster – Developer Salary Predictor
 
-**DevPayMaster** is a data-driven web app that predicts software developer salaries based on real-world data from over **90,000 professionals**.  
-Built with **Streamlit**, it blends simplicity, interactivity, and real survey data to deliver instant, location-aware salary estimates.
+**DevPayMaster** is a data-driven web app that predicts software developer salaries based on real-world data from over 90,000 professionals.  
+Built with **Streamlit**, it combines simplicity, interactivity, and empirical data to deliver location-aware salary estimates.
 
-> ⚡ Powered by the Stack Overflow Developer Survey (2023)
-
----
-
-## 🎯 What It Does
-
-- ✅ Predicts salaries based on:
-  - 📍 **Country**
-  - 🎓 **Education Level**
-  - 🧠 **Years of Experience**
-- 📊 Offers **data visualizations** by country and experience
-- 🧠 Leverages a trained regression model with encoded features
-- 🌍 Great for **career planning**, **team benchmarking**, or **comp analysis**
+> Based on the Stack Overflow Developer Survey (2023)
 
 ---
 
-## 🖼️ Screenshots (Optional)
+## What It Does
 
-<sub>Add screenshots or screen recordings to showcase the UX and visualizations.</sub>
+- Predicts salaries based on:
+  - Country
+  - Education level
+  - Years of experience
+- Provides visual insights:
+  - Salary distribution by country
+  - Salary trends by experience
+- Uses a trained regression model with encoded categorical inputs
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Component         | Tool / Library                                      |
-|-------------------|-----------------------------------------------------|
-| **Web UI**        | [Streamlit](https://streamlit.io/)                  |
-| **Data Wrangling**| Pandas, Numpy                                       |
-| **Modeling**      | Scikit-learn (Regression Model + Encoders)          |
-| **Visualization** | Matplotlib, Seaborn, Streamlit Charts               |
-| **Packaging**     | Pickle for model serialization                      |
-| **Deployment**    | Local or Streamlit Cloud                            |
+|------------------|-----------------------------------------------------|
+| Web UI            | [Streamlit](https://streamlit.io/)                  |
+| Data Wrangling    | Pandas, Numpy                                       |
+| Modeling          | Scikit-learn (Regression + Encoders)                |
+| Visualization     | Matplotlib, Seaborn                                 |
+| Packaging         | Pickle                                              |
+| Deployment        | Local or Streamlit Cloud                            |
 
 ---
 
-## 🚀 How to Run It Locally
+## How to Run It Locally
 
 ```bash
-# 1. Create virtual environment
+# 1. Create and activate virtual environment
 python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# 2. Activate it (Windows example)
-cd venv
-Scripts\activate.bat
-cd ..
-
-# 3. Install dependencies
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# 4. Run the app
+# 3. Launch the app
 streamlit run src/app.py
 ```
 
-> 💡 If `requirements.txt` is missing or outdated:
+If `requirements.txt` is missing or incomplete:
+
 ```bash
 pip install streamlit pandas numpy matplotlib scikit-learn seaborn ipython ipykernel
 ```
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
-### 🔮 Predict Mode (`predict_page.py`)
-- Loads a pre-trained regression model (`saved_steps.pkl`)
-- Transforms user inputs using label encoders
-- Predicts salary and displays the scaled result
+### Predict Mode (`predict_page.py`)
+- Loads a pre-trained model from `saved_steps.pkl`
+- Transforms user inputs via label encoders
+- Outputs a predicted salary based on the input features
 
-### 📊 Explore Mode (`explore_page.py`)
-- Loads & cleans survey data from `survey_results_public.csv`
-- Aggregates stats for:
-  - Country response distribution
-  - Mean salary by country
-  - Mean salary by experience level
-- Renders **pie charts**, **bar charts**, and **line charts** interactively
+### Explore Mode (`explore_page.py`)
+- Cleans and filters the original survey data
+- Aggregates and displays:
+  - Response distribution by country
+  - Average salary by country
+  - Salary progression by experience
 
-### 🧪 Data Cleaning Includes:
-- Removing outliers and incomplete responses
-- Grouping countries with low sample size as `"Other"`
-- Standardizing education and experience categories
+### Data Cleaning Logic
+- Outlier removal on compensation
+- Country grouping for small samples
+- Education and experience normalization
 
 ---
 
-## 📂 File Structure (Simplified)
+## File Structure
 
 ```
 DevPayMaster/
 │
 ├── src/
-│   ├── app.py                  # Main Streamlit app
-│   ├── predict_page.py         # UI + logic for prediction
-│   └── explore_page.py         # UI + logic for data exploration
+│   ├── app.py                  # Main entry point
+│   ├── predict_page.py         # Predict mode logic
+│   └── explore_page.py         # Explore mode logic
 │
 ├── saved_steps.pkl             # Trained model + encoders
-├── survey_results_public.csv   # Raw survey dataset
+├── survey_results_public.csv   # Dataset
 ├── requirements.txt
-└── README.md                   # ← You’re here
+└── README.md
 ```
 
 ---
 
-## 🤝 Contact
+## About the Author
 
-> Built by **Mathieu Bekkaye** — Fullstack Engineer & Data Scientist  
-📧 [bekkaye.m+portfolio@gmail.com](mailto:bekkaye.m+portfolio@gmail.com)  
-🌐 [LinkedIn](https://linkedin.com/in/mathieubekkaye)  
-🗓️ [Book a call](https://calendly.com/mathieubk/rdv)
+Built by **Mathieu Bekkaye** — Senior Fullstack Engineer & Data Scientist  
+Contact: [bekkaye.m+portfolio@gmail.com](mailto:bekkaye.m+portfolio@gmail.com)  
+LinkedIn: [linkedin.com/in/mathieubekkaye](https://linkedin.com/in/mathieubekkaye)  
+Book a call: [calendly.com/mathieubk/rdv](https://calendly.com/mathieubk/rdv)
 
 ---
 
-## 💬 Why This Matters
+## Why This Project Matters
 
-- 🔍 Shows practical data science in action: from **cleaning** to **modeling** to **deployment**
-- 💼 Makes compensation research feel like a product
-- 👨‍💻 Demonstrates real-world use of **Streamlit** for UX
-- 🧰 Excellent technical proof-of-concept for hiring managers
+- Demonstrates applied machine learning in a business-relevant context
+- Combines clean UX with real insights
+- Reflects practical experience in data modeling, transformation, and deployment
 
-> _“Great engineers don’t just write code — they turn insights into experiences.”_
+> “Great engineers don’t just code — they create tools that solve real problems.”
