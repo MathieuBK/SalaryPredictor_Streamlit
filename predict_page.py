@@ -36,6 +36,8 @@ def show_predict_page():
 		"(https://insights.stackoverflow.com/survey)."
 	)
 
+	st.title("")  # Empty line for spacing
+
 	countries = (
 		"United States",
 		"India",
@@ -62,6 +64,10 @@ def show_predict_page():
 
 	country = st.selectbox("Country", countries)
 	education = st.selectbox("Education Level", education_levels)
+
+	st.write("")  # Empty line for spacing
+	st.write("")  # Another empty line
+
 	experience = st.slider("Years of Experience", 0, 50, 3)
 
 	if st.button("Calculate Salary", type="primary"):
