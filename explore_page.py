@@ -71,13 +71,14 @@ def load_data():
 	return df
 
 
-df = load_data()
+#df = load_data()
 
 
 def show_explore_page():
 	"""
 	Display the data exploration page with charts and insights.
 	"""
+	df = load_data()
 	st.title("💵 Developer Salary Data")
 	st.caption(
 		"Based on 90,000+ responses to Stack Overflow's Developer Survey 2023 "
