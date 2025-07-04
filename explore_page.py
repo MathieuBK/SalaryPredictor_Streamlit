@@ -120,4 +120,4 @@ def show_explore_page():
 	st.line_chart(1.5 * mean_salary_exp)
 
 
-show_explore_page()
+# show_explore_page()
